@@ -3,7 +3,7 @@ package com.weiwangcn.betterspinner.sample;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.ArrayAdapter;
@@ -12,16 +12,16 @@ import com.weiwangcn.betterspinner.R;
 import com.weiwangcn.betterspinner.library.BetterSpinner;
 import com.weiwangcn.betterspinner.library.material.MaterialBetterSpinner;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 
 
-public class MainActivity extends ActionBarActivity {
+public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.spinner1)
+    @BindView(R.id.spinner1)
     BetterSpinner spinner1;
 
-    @Bind(R.id.spinner2)
+    @BindView(R.id.spinner2)
     MaterialBetterSpinner spinner2;
 
     @Override
